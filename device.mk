@@ -199,9 +199,7 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libshim_camera \
     libcamera_shim \
-    Camera2 \
-    Snap \
-    SnapdragonCamera
+    Snap
 
 # GPS
 PRODUCT_PACKAGES += \

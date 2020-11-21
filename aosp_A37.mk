@@ -39,6 +39,9 @@ PRODUCT_MANUFACTURER := Oppo
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="A37f"
+
 # Use Gapps
 # Set this flag in build script
 ifeq ($(CURRENT_BUILD_TYPE), gapps)
