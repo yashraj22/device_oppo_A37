@@ -278,6 +278,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:system/vendor/etc/seccomp_policy/mediacodec.policy
 
+# Sensors
+PRODUCT_PACKAGES += \
+    accelcal \
+    AccCalibration \
+    sensord \
+    calmodule.cfg \
+    sensors.msm8916
 
 ###===============================================######
 ##HIDL packages
