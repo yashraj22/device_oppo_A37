@@ -225,8 +225,9 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-tmp
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
-    /system/vendor/lib64/lib-imsdpl.so|libshims_boringssl.so \
-    /system/vendor/lib64/lib-imsvt.so|libshims_ims.so
+    /system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so \
+    /system/vendor/lib/libmmcamera2_stats_algorithm.so|libcamera_shim.so \
+    /system/lib/hw/camera.vendor.msm8916.so|libshim_camera.so
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true

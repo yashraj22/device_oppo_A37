@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,19 +14,16 @@
  * limitations under the License.
  */
 
-#include <openssl/evp.h>
+namespace android {
 
-#define EVP_CIPH_RAND_KEY		0x200
+class CameraParameters
+{
+public:
+    static const char KEY_TRACK_ENABLE[];
+    static const char KEY_TRACK_AREAS[];
+    static const char KEY_APP_MASK[];
+    static const char FOCUS_MODE_MANUAL_POSITION[];
+    static const char WHITE_BALANCE_MANUAL_CCT[];
+};
 
-#define EVP_F_EVP_OPENINIT				 	102
-#define EVP_R_PUBLIC_KEY_NOT_RSA			106
-#define EVP_F_EVP_PKEY_ENCRYPT_OLD			152
-
-#define EVPerr(f,r)  void
-
-int		EVP_PKEY_decrypt_old(unsigned char *dec_key,
-			const unsigned char *enc_key,int enc_key_len,
-			EVP_PKEY *private_key);
-int		EVP_PKEY_encrypt_old(unsigned char *enc_key,
-			const unsigned char *key,int key_len,
-			EVP_PKEY *pub_key);
+}; // namespace android

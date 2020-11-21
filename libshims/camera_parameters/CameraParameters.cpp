@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 The CyanogenMod Project
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-#include <ui/GraphicBuffer.h>
-#include <media/stagefright/MediaBuffer.h>
+#include "CameraParameters.h"
 
-extern "C" {
+namespace android {
 
-int _ZNK7android11MediaBuffer8refcountEv(android::MediaBuffer *thisptr) {
-    return thisptr->refcount();
-}
+const char CameraParameters::KEY_TRACK_ENABLE[] = "track-enable";
+const char CameraParameters::KEY_TRACK_AREAS[] = "track-areas";
+const char CameraParameters::KEY_APP_MASK[] = "app-mask";
+const char CameraParameters::FOCUS_MODE_MANUAL_POSITION[] = "manual";
+const char CameraParameters::WHITE_BALANCE_MANUAL_CCT[] = "manual-cct";
 
-}
+}; // namespace android

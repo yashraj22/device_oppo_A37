@@ -123,9 +123,7 @@ PRODUCT_COPY_FILES += \
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common_system \
-    ims_ext_common.xml \
-    libshims_boringssl \
-    libshims_ims
+    ims_ext_common.xml
 
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system
@@ -198,8 +196,11 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
-    libbson \
-    Snap
+    libshim_camera \
+    libcamera_shim \
+    Camera2 \
+    Snap \
+    SnapdragonCamera
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -295,7 +296,8 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-service \
+    camera.device@1.0-impl
 
 # Display
 PRODUCT_PACKAGES += \
