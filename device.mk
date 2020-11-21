@@ -17,9 +17,9 @@
 #
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += device/lenovo/A6020/overlay
+DEVICE_PACKAGE_OVERLAYS += device/oppo/A37/overlay
 
-$(call inherit-product, vendor/lenovo/A6020/A6020-vendor.mk)
+$(call inherit-product, vendor/oppo/A37/A37-vendor.mk)
 
 # Bluetooth
 PRODUCT_PACKAGES += \

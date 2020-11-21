@@ -18,8 +18,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_l_mr1.mk)
 
-# Inherit from A6020 device
-$(call inherit-product, device/lenovo/A6020/device.mk)
+# Inherit from A37 device
+$(call inherit-product, device/oppo/A37/device.mk)
 
 # Inherit some common AEX stuff
 $(call inherit-product, vendor/aosp/common.mk)
@@ -31,13 +31,13 @@ TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := A6020
-PRODUCT_NAME := aosp_A6020
-PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := Vibe K5
-PRODUCT_MANUFACTURER := Lenovo
+PRODUCT_DEVICE := A37
+PRODUCT_NAME := aosp_A37
+PRODUCT_BRAND := Oppo
+PRODUCT_MODEL := A37
+PRODUCT_MANUFACTURER := Oppo
 
-PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 # Use Gapps
 # Set this flag in build script

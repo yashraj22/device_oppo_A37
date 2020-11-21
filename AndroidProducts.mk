@@ -15,9 +15,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_A6020.mk
+    $(LOCAL_DIR)/aosp_A37.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_A6020-eng \
-    aosp_A6020-user \
-    aosp_A6020-userdebug
+    aosp_A37-eng \
+    aosp_A37-user \
+    aosp_A37-userdebug
