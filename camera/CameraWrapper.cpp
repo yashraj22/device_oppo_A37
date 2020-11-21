@@ -21,7 +21,7 @@
 *
 */
 
-#define LOG_NDEBUG 0
+#define LOG_NDEBUG 1
 #define LOG_TAG "CameraWrapper"
 #include <cutils/log.h>
 #include <cutils/properties.h>
@@ -156,12 +156,7 @@ static char *camera_fixup_setparams(int id, const char *settings)
     params.dump();
 #endif
 
-    const char *sceneMode = params.get(CameraParameters::KEY_SCENE_MODE);
-    if (sceneMode != NULL) {
-        if (!strcmp(sceneMode, CameraParameters::SCENE_MODE_HDR)) {
-            params.remove("zsl");
-        }
-    }
+    params.set("zsl", "on");
 
 #if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
