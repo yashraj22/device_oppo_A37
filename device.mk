@@ -149,9 +149,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs_8929.xml:system/vendor/etc/media_codecs_8929.xml \
     $(LOCAL_PATH)/configs/media_codecs_8939.xml:system/vendor/etc/media_codecs_8939.xml \
-    $(LOCAL_PATH)/configs/media_codecs_performance_8929.xml:system/vendor/etc/media_codecs_performance_8929.xml \
-    $(LOCAL_PATH)/configs/media_codecs_performance_8939.xml:system/vendor/etc/media_codecs_performance_8939.xml \
-    $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:system/vendor/etc/media_profiles_V1_0.xml
+    $(LOCAL_PATH)/configs/media_codecs.xml:system/vendor/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media_profiles.xml:system/vendor/etc/media_profiles.xml
 
 # OMX
 PRODUCT_PACKAGES += \
