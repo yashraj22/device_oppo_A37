@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2015-2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
@@ -67,8 +66,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false
 
 # Doze
-PRODUCT_PACKAGES += \
-    LenovoDoze
+#PRODUCT_PACKAGES += \
+#LenovoDoze
 
 # Encryption
 PRODUCT_PACKAGES += \
@@ -79,8 +78,8 @@ PRODUCT_PACKAGES += \
     keystore.msm8916
 
 # Firmware patch
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/move_files.sh:install/bin/move_files.sh
+#PRODUCT_COPY_FILES += \
+#$(LOCAL_PATH)/configs/move_files.sh:install/bin/move_files.sh
 
 # FM
 PRODUCT_PACKAGES += \
